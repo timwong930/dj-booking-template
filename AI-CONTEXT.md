@@ -1,18 +1,18 @@
 # AI Context — DJ Booking Template
 
 ## Purpose
-This repo is a reusable website template for DJs who want to attract inquiries for parties, clubs, bars, weddings, private events, and brand activations.
+Reusable website template for DJs who want to attract inquiries for parties, clubs, bars, weddings, private events, and brand activations.
 
 ## Visual direction
 - Dark premium aesthetic
-- Strong contrast
-- Subtle motion
-- Clean card-based sections
-- Social-forward layout
+- Neon accent details without going overboard
+- Subtle motion inspired by StringTune-style web patterns
+- Card-based sections and clear booking flow
 
 ## Core sections
-- Hero with event-focused CTA
+- Hero with a booking CTA
 - Services
+- DJ vibe / genres / set style
 - Social links
 - Phone and email placement
 - Contact/inquiry form

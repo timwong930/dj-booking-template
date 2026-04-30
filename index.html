@@ -6,86 +6,133 @@
     <title>DJ Booking Template | Events, Clubs, Bars & Private Parties</title>
     <meta
       name="description"
-      content="A sleek, high-converting DJ website template for parties, clubs, bars, weddings, and private events. Show your socials, services, contact details, and inquiry form."
+      content="A unique, animated DJ website template for parties, clubs, bars, weddings, and private events. Show your socials, services, contact details, and inquiry form."
     />
     <meta property="og:title" content="DJ Booking Template" />
     <meta
       property="og:description"
-      content="A premium, motion-friendly website template for DJs booking parties, clubs, bars, and private events."
+      content="A premium, motion-rich website template for DJs booking parties, clubs, bars, and private events."
     />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0b0d12" />
+    <meta name="theme-color" content="#070a10" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
+    <div class="progress-bar" aria-hidden="true"><span></span></div>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="DJ booking template home">
         <span class="brand-mark">DJ</span>
-        <span class="brand-text">Nightwave</span>
+        <span class="brand-copy">
+          <strong>Nightwave</strong>
+          <span>Book the room</span>
+        </span>
       </a>
-      <nav class="nav">
+
+      <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
+        <a href="#vibe">Vibe</a>
         <a href="#socials">Socials</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <a class="btn btn-ghost" href="#contact">Inquire for your event</a>
     </header>
 
     <main id="top">
-      <section class="hero section reveal">
+      <section class="hero section reveal" data-hero>
         <div class="hero-copy">
-          <p class="eyebrow">DJ website template for events that need energy</p>
-          <h1>Book a DJ who can move a party, a club night, or a packed bar crowd.</h1>
+          <p class="eyebrow">DJ website template for parties, clubs, bars, and private events</p>
+          <h1 data-split-text>Drop the beat. Book the night.</h1>
           <p class="lede">
-            Built for DJs who want a polished online presence with social links,
-            easy contact details, and a strong inquiry CTA for private events,
-            club gigs, bars, weddings, and brand activations.
+            Built for DJs who want a high-energy online presence with social links,
+            direct contact details, and one clear CTA for event inquiries.
           </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Inquire for your event</a>
-            <a class="btn btn-secondary" href="#socials">See socials</a>
+            <a class="btn btn-primary magnetic" href="#contact">Inquire for your event</a>
+            <a class="btn btn-secondary magnetic" href="#socials">See socials</a>
           </div>
+
           <div class="hero-meta">
-            <span>Available for</span>
-            <strong>Parties · Clubs · Bars · Private Events · Weddings</strong>
+            <div>
+              <span>Available for</span>
+              <strong>Parties · Clubs · Bars · Weddings · Brand Events</strong>
+            </div>
+            <div>
+              <span>Sound</span>
+              <strong>Open format · House · Hip-hop · Afrobeats · EDM</strong>
+            </div>
+          </div>
+
+          <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+              <span>Book the night</span>
+              <span>Club sets</span>
+              <span>Private events</span>
+              <span>Bar residencies</span>
+              <span>Wedding receptions</span>
+              <span>Brand activations</span>
+              <span>Book the night</span>
+              <span>Club sets</span>
+              <span>Private events</span>
+              <span>Bar residencies</span>
+              <span>Wedding receptions</span>
+              <span>Brand activations</span>
+            </div>
           </div>
         </div>
 
-        <aside class="hero-card reveal">
-          <div class="card-header">
-            <span>Now booking</span>
+        <aside class="hero-card reveal" data-spotlight>
+          <div class="card-top">
+            <div>
+              <span class="status-dot"></span>
+              Now booking
+            </div>
             <span class="pill">2025</span>
           </div>
-          <div class="card-visual" aria-hidden="true">
-            <div class="vinyl"></div>
-            <div class="wave wave-1"></div>
-            <div class="wave wave-2"></div>
-            <div class="wave wave-3"></div>
+
+          <div class="deck" aria-hidden="true">
+            <div class="deck-platter"></div>
+            <div class="deck-tonearm"></div>
+            <div class="deck-bars">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="deck-ring"></div>
+            <div class="light light-a"></div>
+            <div class="light light-b"></div>
           </div>
+
+          <div class="card-badges">
+            <span>Open format</span>
+            <span>Club ready</span>
+            <span>Event friendly</span>
+          </div>
+
           <ul class="card-list">
-            <li>Event-ready branding</li>
             <li>Social media link hub</li>
-            <li>Direct inquiry form</li>
-            <li>Tappable phone & email</li>
+            <li>Fast contact + booking flow</li>
+            <li>Animated, premium nightlife vibe</li>
+            <li>Mobile-first CTA experience</li>
           </ul>
         </aside>
       </section>
 
       <section class="section reveal" id="services">
         <div class="section-heading">
-          <p class="eyebrow">What you offer</p>
-          <h2>Keep the services clear so people know exactly what they can book.</h2>
+          <p class="eyebrow">Services</p>
+          <h2>Make the services obvious so people know exactly what they can book.</h2>
         </div>
+
         <div class="grid three-up">
           <article class="feature-card reveal">
             <h3>Private events</h3>
@@ -102,42 +149,69 @@
         </div>
       </section>
 
+      <section class="section reveal" id="vibe">
+        <div class="section-heading">
+          <p class="eyebrow">DJ vibe</p>
+          <h2>Use the motion to make the page feel like a live set, not a static flyer.</h2>
+        </div>
+
+        <div class="vibe-grid">
+          <article class="vibe-card reveal">
+            <span>Genres</span>
+            <strong>House · Hip-hop · Afrobeats · EDM · Top 40</strong>
+          </article>
+          <article class="vibe-card reveal">
+            <span>Set style</span>
+            <strong>Open format · Club transitions · Crowd-reading</strong>
+          </article>
+          <article class="vibe-card reveal">
+            <span>Best for</span>
+            <strong>Bars · Lounges · Clubs · Weddings · Private rooms</strong>
+          </article>
+        </div>
+      </section>
+
       <section class="section reveal" id="socials">
         <div class="section-heading">
           <p class="eyebrow">Social links</p>
-          <h2>Make it easy for people to check your vibe before they reach out.</h2>
+          <h2>Let people check the vibe before they send an inquiry.</h2>
         </div>
+
         <div class="social-grid">
-          <a class="social-card reveal" href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">
+          <a class="social-card reveal magnetic" href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">
             <span>Instagram</span>
             <strong>@yourhandle</strong>
+            <p>Photos, reels, gig promos, and behind-the-scenes clips.</p>
           </a>
-          <a class="social-card reveal" href="https://tiktok.com/@yourhandle" target="_blank" rel="noreferrer">
+          <a class="social-card reveal magnetic" href="https://tiktok.com/@yourhandle" target="_blank" rel="noreferrer">
             <span>TikTok</span>
             <strong>@yourhandle</strong>
+            <p>Short performance clips, transitions, and crowd energy.</p>
           </a>
-          <a class="social-card reveal" href="https://soundcloud.com/yourhandle" target="_blank" rel="noreferrer">
+          <a class="social-card reveal magnetic" href="https://soundcloud.com/yourhandle" target="_blank" rel="noreferrer">
             <span>SoundCloud</span>
             <strong>/yourhandle</strong>
+            <p>Mixes, edits, and sample sets for quick listening.</p>
           </a>
-          <a class="social-card reveal" href="https://youtube.com/@yourhandle" target="_blank" rel="noreferrer">
+          <a class="social-card reveal magnetic" href="https://youtube.com/@yourhandle" target="_blank" rel="noreferrer">
             <span>YouTube</span>
             <strong>@yourhandle</strong>
+            <p>Long-form sets, live footage, and event highlights.</p>
           </a>
         </div>
       </section>
 
-      <section class="section split reveal">
+      <section class="section split reveal" id="contact-details">
         <div class="section-heading">
           <p class="eyebrow">Contact details</p>
           <h2>Put your phone and email where people can grab them fast.</h2>
         </div>
         <div class="contact-strip">
-          <a class="contact-item" href="tel:+15551234567">
+          <a class="contact-item magnetic" href="tel:+15551234567">
             <span>Phone</span>
             <strong>+1 (555) 123-4567</strong>
           </a>
-          <a class="contact-item" href="mailto:bookings@yourdjname.com">
+          <a class="contact-item magnetic" href="mailto:bookings@yourdjname.com">
             <span>Email</span>
             <strong>bookings@yourdjname.com</strong>
           </a>
@@ -152,6 +226,7 @@
             Use this form for availability, pricing, event type, date, venue, and any special requests.
           </p>
         </div>
+
         <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
           <div class="form-grid">
             <label>
@@ -175,7 +250,7 @@
               <textarea name="message" rows="6" placeholder="Tell me about the date, venue, crowd, set length, and anything special." required></textarea>
             </label>
           </div>
-          <button class="btn btn-primary btn-submit" type="submit">Inquire for your event</button>
+          <button class="btn btn-primary btn-submit magnetic" type="submit">Inquire for your event</button>
         </form>
       </section>
     </main>
