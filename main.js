@@ -1,4 +1,5 @@
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isNarrow = window.matchMedia('(max-width: 760px)').matches;
 const docEl = document.documentElement;
 const progressFill = document.querySelector('.progress-bar span');
 const header = document.querySelector('.site-header');
@@ -33,7 +34,7 @@ const splitText = (node) => {
 
 const headline = document.querySelector('[data-split-text]');
 if (headline) {
-  if (prefersReducedMotion) {
+  if (prefersReducedMotion || isNarrow) {
     headline.classList.add('is-visible');
   } else {
     splitText(headline);
