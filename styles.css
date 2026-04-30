@@ -69,7 +69,11 @@ button, input, textarea { font: inherit; }
 main,
 .site-footer {
   position: relative;
-  z-index: 1;
+}
+
+main,
+.site-footer {
+  z-index: 0;
 }
 
 .site-header {
@@ -82,6 +86,7 @@ main,
   gap: 1rem;
   position: sticky;
   top: 0;
+  z-index: 1000;
   background: #0a0d10;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.32);
