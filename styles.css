@@ -143,15 +143,15 @@ main,
 .site-footer {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 4.3rem 1.4rem;
+  padding: 3.4rem 1.4rem;
 }
 .hero {
-  padding-top: 4.6rem;
+  padding-top: 3.4rem;
   display: grid;
   grid-template-columns: 1.25fr 0.95fr;
   gap: 1.2rem;
   align-items: center;
-  min-height: calc(100vh - 90px);
+  min-height: auto;
 }
 .hero-copy,
 .hero-card,
@@ -166,7 +166,7 @@ main,
   box-shadow: var(--shadow);
 }
 .hero-copy {
-  padding: 1.3rem 0.2rem;
+  padding: 1.1rem 0.2rem;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -239,7 +239,7 @@ main,
   max-width: 34rem;
 }
 .hero-meta div {
-  padding: 0.95rem 1rem;
+  padding: 0.85rem 0.95rem;
   border-radius: var(--radius-md);
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.07);
@@ -426,7 +426,7 @@ main,
   position: relative;
   z-index: 1;
 }
-.section-heading { margin-bottom: 1.8rem; }
+.section-heading { margin-bottom: 1.4rem; }
 .grid.three-up,
 .social-grid,
 .vibe-grid {
@@ -439,7 +439,7 @@ main,
 .vibe-card,
 .social-card,
 .contact-item {
-  padding: 1.2rem;
+  padding: 1rem;
 }
 .feature-card h3,
 .social-card strong,
@@ -474,7 +474,7 @@ main,
   display: block;
   transition: transform 180ms ease, border-color 180ms ease;
 }
-.contact-form { padding: 1.2rem; }
+.contact-form { padding: 1rem; }
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
