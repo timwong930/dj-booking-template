@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="tips-page">
     <main class="tips-wrap reveal is-visible">
@@ -20,34 +20,33 @@
         <p class="eyebrow">Support the set</p>
         <h1>Tip the DJs</h1>
         <p class="lede">
-          Thanks for rocking with us. Pick your payment method below.
-          This page is intended for direct QR/link sharing.
+          Thanks for rocking with us. Tap a payment method below.
         </p>
 
         <div class="tips-grid">
           <article class="tip-card">
             <h2>Zelle</h2>
-            <p>Add the booking email or phone used for Zelle payouts.</p>
+            <p>Use the booking email for Zelle payments.</p>
             <div class="tip-handle">zelle@yourdjname.com</div>
-            <div class="qr-placeholder">Place Zelle QR image here</div>
+            <a class="tip-link" href="mailto:zelle@yourdjname.com?subject=DJ%20Tip&body=Sending%20a%20tip%20via%20Zelle">Send via Zelle</a>
           </article>
 
           <article class="tip-card">
             <h2>Venmo</h2>
-            <p>Use your Venmo username so fans can tip in one tap.</p>
+            <p>Tap to open Venmo profile directly.</p>
             <div class="tip-handle">@yourvenmo</div>
-            <div class="qr-placeholder">Place Venmo QR image here</div>
+            <a class="tip-link" href="https://venmo.com/yourvenmo" target="_blank" rel="noreferrer">Send via Venmo</a>
           </article>
 
           <article class="tip-card">
             <h2>Cash App</h2>
-            <p>Share your Cashtag for quick support after the set.</p>
+            <p>Tap to open Cash App payment link.</p>
             <div class="tip-handle">$yourcashtag</div>
-            <div class="qr-placeholder">Place Cash App QR image here</div>
+            <a class="tip-link" href="https://cash.app/$yourcashtag" target="_blank" rel="noreferrer">Send via Cash App</a>
           </article>
         </div>
 
-        <p class="tips-note">Pro tip: replace each placeholder with an exported QR image and keep this URL off the main nav.</p>
+        <p class="tips-note">Swap the handle values and links with your real accounts before sharing.</p>
       </section>
     </main>
   </body>

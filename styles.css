@@ -597,15 +597,23 @@ textarea:focus {
   padding: 0.35rem 0.75rem;
   font-weight: 700;
 }
-.qr-placeholder {
+.tip-link {
   margin-top: 0.9rem;
-  min-height: 150px;
+  min-height: 3rem;
   border-radius: 14px;
-  border: 1px dashed rgba(255,255,255,0.2);
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.04);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.tip-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.36);
+  background: rgba(255,255,255,0.08);
 }
 .tips-note {
   margin-top: 1rem;
