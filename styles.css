@@ -153,6 +153,39 @@ main,
   align-items: stretch;
   min-height: auto;
 }
+
+/* Desktop polish: keep hero balanced so web view doesn't feel stacked/funky */
+@media (min-width: 1081px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    gap: 1.4rem;
+    align-items: start;
+  }
+
+  .hero-copy {
+    padding-right: 1.2rem;
+  }
+
+  .hero-card {
+    margin-top: 0.4rem;
+    position: sticky;
+    top: 5.6rem;
+  }
+
+  .ticker {
+    grid-column: 1 / -1;
+    margin-top: 0.8rem;
+  }
+
+  .section-heading h2 {
+    max-width: 18ch;
+  }
+
+  .split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 1.25rem;
+  }
+}
 .hero-copy,
 .hero-card,
 .feature-card,
@@ -519,6 +552,66 @@ textarea:focus {
   color: var(--muted);
 }
 .site-footer a:hover { color: white; }
+
+/* Hidden tip page (share via direct link /tips.html or QR only) */
+.tips-page {
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+.tips-wrap {
+  width: min(980px, 100%);
+}
+.tips-panel {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 2vw, 2rem);
+}
+.tips-panel h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+.tips-grid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.tip-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--panel-strong);
+  padding: 1rem;
+}
+.tip-card h2 {
+  margin: 0;
+}
+.tip-handle {
+  margin-top: 0.55rem;
+  display: inline-flex;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-weight: 700;
+}
+.qr-placeholder {
+  margin-top: 0.9rem;
+  min-height: 150px;
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,0.2);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.tips-note {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(26px);
@@ -563,7 +656,8 @@ textarea:focus {
   .social-grid,
   .vibe-grid,
   .contact-strip,
-  .form-grid { grid-template-columns: 1fr; }
+  .form-grid,
+  .tips-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding-top: 2.5rem; }
   .hero-copy h1 { max-width: 100%; }
   .site-header { flex-wrap: wrap; justify-content: center; }
