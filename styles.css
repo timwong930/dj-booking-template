@@ -645,9 +645,9 @@ textarea:focus {
     text-align: left;
   }
   .ticker {
-    width: min(100%, 21rem);
+    width: 100%;
     display: block;
-    margin: 1rem auto 0;
+    margin: 1rem 0 0;
     padding: 0.55rem 0;
     overflow: hidden;
     border-top-color: rgba(255,255,255,0.05);
@@ -663,11 +663,11 @@ textarea:focus {
   }
   .hero-card {
     display: block;
-    width: min(100%, 21rem);
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 0.9rem;
     border-radius: 22px;
-    transform: scale(0.94);
+    transform: none;
     transform-origin: center top;
   }
   .deck {
