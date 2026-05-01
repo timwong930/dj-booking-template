@@ -19,35 +19,88 @@
       <section class="tips-panel">
         <p class="eyebrow">Support the set</p>
         <h1>Tip the DJs</h1>
-        <p class="lede">
-          Thanks for rocking with us. Tap a payment method below.
-        </p>
+        <p class="lede">Thanks for rocking with us. Tips are much appreciated!</p>
 
         <div class="tips-grid">
           <article class="tip-card">
             <h2>Zelle</h2>
-            <p>Use the booking email for Zelle payments.</p>
+            <p>Most phones will open your default banking/Zelle flow.</p>
             <div class="tip-handle">zelle@yourdjname.com</div>
-            <a class="tip-link" href="mailto:zelle@yourdjname.com?subject=DJ%20Tip&body=Sending%20a%20tip%20via%20Zelle">Send via Zelle</a>
+            <a
+              class="tip-link tip-app-link"
+              href="https://www.zellepay.com/"
+              data-ios="zelle://"
+              data-android="zelle://"
+              data-fallback="https://www.zellepay.com/"
+            >
+              Open Zelle App
+            </a>
           </article>
 
           <article class="tip-card">
             <h2>Venmo</h2>
-            <p>Tap to open Venmo profile directly.</p>
+            <p>Tap to jump directly to Venmo.</p>
             <div class="tip-handle">@yourvenmo</div>
-            <a class="tip-link" href="https://venmo.com/yourvenmo" target="_blank" rel="noreferrer">Send via Venmo</a>
+            <a
+              class="tip-link tip-app-link"
+              href="https://venmo.com/yourvenmo"
+              data-ios="venmo://users/yourvenmo"
+              data-android="venmo://users/yourvenmo"
+              data-fallback="https://venmo.com/yourvenmo"
+            >
+              Open Venmo App
+            </a>
           </article>
 
           <article class="tip-card">
             <h2>Cash App</h2>
-            <p>Tap to open Cash App payment link.</p>
+            <p>Tap to open Cash App instantly.</p>
             <div class="tip-handle">$yourcashtag</div>
-            <a class="tip-link" href="https://cash.app/$yourcashtag" target="_blank" rel="noreferrer">Send via Cash App</a>
+            <a
+              class="tip-link tip-app-link"
+              href="https://cash.app/$yourcashtag"
+              data-ios="cashapp://cash/$yourcashtag"
+              data-android="cashapp://cash/$yourcashtag"
+              data-fallback="https://cash.app/$yourcashtag"
+            >
+              Open Cash App
+            </a>
           </article>
         </div>
 
-        <p class="tips-note">Swap the handle values and links with your real accounts before sharing.</p>
+        <p class="tips-note">
+          Swap the handle values and links with your real accounts before sharing.
+        </p>
       </section>
     </main>
+
+    <script>
+      (function () {
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const isAndroid = /Android/i.test(navigator.userAgent);
+
+        document.querySelectorAll('.tip-app-link').forEach((link) => {
+          link.addEventListener('click', (e) => {
+            const ios = link.dataset.ios;
+            const android = link.dataset.android;
+            const fallback = link.dataset.fallback || link.href;
+            const deepLink = isIOS ? ios : isAndroid ? android : null;
+
+            if (!deepLink) return;
+
+            e.preventDefault();
+            const start = Date.now();
+            window.location.href = deepLink;
+
+            setTimeout(() => {
+              // if app didn't open, fallback to web
+              if (Date.now() - start < 1600) {
+                window.location.href = fallback;
+              }
+            }, 900);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
