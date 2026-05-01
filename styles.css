@@ -148,9 +148,9 @@ main,
 .hero {
   padding-top: 3.4rem;
   display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  gap: 1.2rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: stretch;
   min-height: auto;
 }
 .hero-copy,
@@ -170,6 +170,7 @@ main,
   background: transparent;
   border: 0;
   box-shadow: none;
+  max-width: none;
 }
 .hero-copy h1,
 .section-heading h2 {
@@ -258,6 +259,7 @@ main,
 .ticker {
   margin-top: 1.6rem;
   overflow: hidden;
+  width: 100%;
   padding: 0.85rem 0;
   border-top: 1px solid rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -283,6 +285,7 @@ main,
   padding: 1.15rem;
   backdrop-filter: blur(20px);
   overflow: hidden;
+  width: 100%;
 }
 .hero-card::before {
   content: '';
