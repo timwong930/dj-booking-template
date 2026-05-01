@@ -259,8 +259,11 @@ main,
 .ticker {
   margin-top: 1.6rem;
   overflow: hidden;
-  width: 100%;
-  padding: 0.85rem 0;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0.85rem max(1.4rem, env(safe-area-inset-left)) 0.85rem max(1.4rem, env(safe-area-inset-right));
   border-top: 1px solid rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
@@ -645,10 +648,13 @@ textarea:focus {
     text-align: left;
   }
   .ticker {
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     display: block;
     margin: 1rem 0 0;
-    padding: 0.55rem 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0.55rem max(1rem, env(safe-area-inset-left)) 0.55rem max(1rem, env(safe-area-inset-right));
     overflow: hidden;
     border-top-color: rgba(255,255,255,0.05);
     border-bottom-color: rgba(255,255,255,0.05);
