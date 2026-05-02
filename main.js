@@ -138,7 +138,7 @@ const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', () => {
     const button = form.querySelector('.btn-submit');
-    if (button) button.textContent = 'Sending inquiry...';
+    if (button) button.textContent = 'Sending audit request...';
   });
 }
 

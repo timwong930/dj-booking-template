@@ -1,14 +1,14 @@
 :root {
-  --bg: #06080b;
-  --bg-soft: #101418;
-  --panel: rgba(12, 16, 19, 0.86);
-  --panel-strong: rgba(17, 21, 24, 0.96);
+  --bg: #060913;
+  --bg-soft: #0d1320;
+  --panel: rgba(11, 16, 26, 0.88);
+  --panel-strong: rgba(15, 21, 33, 0.98);
   --border: rgba(255, 255, 255, 0.08);
-  --text: #f4efe7;
-  --muted: rgba(244, 239, 231, 0.72);
-  --accent: #f1b24c;
-  --accent-2: #5bd6b6;
-  --accent-3: #ef6f55;
+  --text: #f5f8ff;
+  --muted: rgba(233, 240, 255, 0.72);
+  --accent: #4f8cff;
+  --accent-2: #a7ff6b;
+  --accent-3: #39d7ff;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
   --radius-xl: 28px;
   --radius-lg: 20px;
@@ -24,9 +24,9 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(241, 178, 76, 0.12), transparent 28%),
-    radial-gradient(circle at top right, rgba(91, 214, 182, 0.12), transparent 28%),
-    linear-gradient(180deg, #050608 0%, #090b0d 100%);
+    radial-gradient(circle at top left, rgba(79, 140, 255, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(167, 255, 107, 0.12), transparent 28%),
+    linear-gradient(180deg, #05070d 0%, #0a101b 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ button, input, textarea { font: inherit; }
   height: 100%;
   width: 0;
   background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
-  box-shadow: 0 0 20px rgba(241, 178, 76, 0.28);
+  box-shadow: 0 0 20px rgba(79, 140, 255, 0.28);
 }
 
 .ambient {
@@ -62,8 +62,8 @@ button, input, textarea { font: inherit; }
   z-index: 0;
   transform: translate3d(0, 0, 0);
 }
-.ambient-a { top: -11rem; left: -12rem; background: rgba(241, 178, 76, 0.16); }
-.ambient-b { bottom: -14rem; right: -10rem; background: rgba(91, 214, 182, 0.16); }
+.ambient-a { top: -11rem; left: -12rem; background: rgba(79, 140, 255, 0.16); }
+.ambient-b { bottom: -14rem; right: -10rem; background: rgba(167, 255, 107, 0.14); }
 
 .site-header,
 main,
@@ -87,7 +87,7 @@ main,
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #0a0d10;
+  background: #07101a;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.32);
   transition: transform 220ms ease;
@@ -105,7 +105,7 @@ main,
   display: grid;
   place-items: center;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(241, 178, 76, 0.95), rgba(91, 214, 182, 0.8));
+  background: linear-gradient(135deg, rgba(79, 140, 255, 0.95), rgba(167, 255, 107, 0.88));
   box-shadow: var(--shadow);
 }
 .brand-copy {
@@ -256,7 +256,7 @@ main,
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: white;
-  box-shadow: 0 16px 40px rgba(241, 178, 76, 0.22);
+  box-shadow: 0 16px 40px rgba(79, 140, 255, 0.24);
 }
 .btn-secondary,
 .btn-ghost {
@@ -468,12 +468,14 @@ main,
 .section-heading { margin-bottom: 1.4rem; }
 .grid.three-up,
 .social-grid,
-.vibe-grid {
+.vibe-grid,
+.pricing-grid {
   display: grid;
   gap: 1rem;
 }
 .grid.three-up { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .vibe-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pricing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .feature-card,
 .vibe-card,
 .social-card,
@@ -514,6 +516,157 @@ main,
   transition: transform 180ms ease, border-color 180ms ease;
 }
 .contact-form { padding: 1rem; }
+
+.pricing-section {
+  padding-top: 3.1rem;
+}
+.pricing-heading {
+  margin-bottom: 1.2rem;
+}
+.pricing-heading h2 {
+  max-width: 16ch;
+}
+.pricing-above {
+  margin: 0 0 0.6rem;
+  color: rgba(233, 240, 255, 0.66);
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+}
+.pricing-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255,255,255,0.08);
+  background:
+    linear-gradient(180deg, rgba(12, 18, 30, 0.96), rgba(8, 12, 20, 0.92));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(79, 140, 255, 0.14), transparent 38%);
+  pointer-events: none;
+}
+.pricing-card.featured {
+  border-color: rgba(79, 140, 255, 0.34);
+  background:
+    linear-gradient(180deg, rgba(13, 21, 37, 0.98), rgba(8, 12, 20, 0.94));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(79, 140, 255, 0.12);
+}
+.pricing-card.featured::before {
+  background: radial-gradient(circle at top right, rgba(167, 255, 107, 0.15), transparent 38%);
+}
+.pricing-card-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.pricing-tier {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(233, 240, 255, 0.92);
+}
+.pricing-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.36rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: rgba(233, 240, 255, 0.82);
+  font-size: 0.76rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pricing-badge.popular {
+  border-color: rgba(167, 255, 107, 0.36);
+  background: rgba(167, 255, 107, 0.1);
+  color: #dfffbe;
+}
+.pricing-subtitle {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(233, 240, 255, 0.74);
+  font-size: 1rem;
+}
+.pricing-price-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.9rem 0 0.25rem;
+}
+.pricing-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+  font-size: clamp(3rem, 6vw, 4.4rem);
+  line-height: 0.88;
+  letter-spacing: -0.08em;
+  font-weight: 900;
+  color: #ffffff;
+}
+.pricing-price .currency {
+  font-size: 0.48em;
+  vertical-align: top;
+  color: rgba(167, 255, 107, 0.9);
+}
+.pricing-price .per {
+  margin-left: 0.12rem;
+  font-size: 0.28em;
+  letter-spacing: 0;
+  color: rgba(233, 240, 255, 0.72);
+}
+.pricing-setup {
+  margin: 0;
+  color: rgba(233, 240, 255, 0.72);
+  font-size: 0.94rem;
+}
+.pricing-setup strong {
+  color: #ffffff;
+}
+.pricing-features {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.pricing-features li + li {
+  margin-top: 0.72rem;
+}
+.feature-note {
+  color: rgba(233, 240, 255, 0.7);
+  font-size: 0.9em;
+}
+.pricing-cta {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: auto;
+}
+.pricing-note {
+  margin: 1rem 0 0;
+  color: rgba(233, 240, 255, 0.66);
+  font-size: 0.95rem;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -560,9 +713,9 @@ textarea:focus {
   place-items: center;
   padding: 2rem 1rem;
   background:
-    radial-gradient(circle at top left, rgba(241, 178, 76, 0.12), transparent 28%),
-    radial-gradient(circle at top right, rgba(91, 214, 182, 0.12), transparent 28%),
-    linear-gradient(180deg, #050608 0%, #090b0d 100%);
+    radial-gradient(circle at top left, rgba(79, 140, 255, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(167, 255, 107, 0.12), transparent 28%),
+    linear-gradient(180deg, #05070d 0%, #0a101b 100%);
 }
 .tips-wrap {
   width: min(1080px, 100%);
@@ -685,6 +838,7 @@ textarea:focus {
   .grid.three-up,
   .social-grid,
   .vibe-grid,
+  .pricing-grid,
   .contact-strip,
   .form-grid,
   .tips-grid { grid-template-columns: 1fr; }
@@ -823,6 +977,7 @@ textarea:focus {
   .card-badges span { font-size: 0.7rem; padding: 0.32rem 0.5rem; }
   .grid.three-up,
   .vibe-grid,
+  .pricing-grid,
   .social-grid,
   .contact-strip,
   .form-grid {
@@ -848,6 +1003,7 @@ textarea:focus {
     max-width: 40ch;
     margin-inline: auto;
   }
+  .pricing-card,
   .feature-card,
   .vibe-card,
   .social-card,
@@ -855,6 +1011,10 @@ textarea:focus {
   .contact-form {
     padding: 1rem;
   }
+  .pricing-price {
+    font-size: clamp(2.75rem, 12vw, 3.3rem);
+  }
+  .pricing-card,
   .feature-card,
   .vibe-card,
   .social-card,
@@ -863,6 +1023,7 @@ textarea:focus {
   .contact-strip,
   .grid.three-up,
   .vibe-grid,
+  .pricing-grid,
   .social-grid {
     width: 100%;
   }

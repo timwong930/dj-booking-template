@@ -1,31 +1,37 @@
-# AI Context — DJ Booking Template
+# AI Context — Madevisibly
 
 ## Purpose
-Reusable website template for DJs who want to attract inquiries for parties, clubs, bars, weddings, private events, and brand activations.
+Madevisibly is a marketing agency for local service businesses that want more calls, more booked jobs, and a stronger local presence.
+
+## Target industries
+- HVAC
+- Plumbing
+- Roofing
+- Electrical
+- Handyman
+- Landscaping
+- Auto detailing
 
 ## Visual direction
-- Dark premium aesthetic
-- Neon accent details without going overboard
-- Subtle motion inspired by StringTune-style web patterns
-- Card-based sections and clear booking flow
+- Dark navy / deep charcoal base
+- Electric blue + lime green accents
+- Clean, modern, professional, premium
+- Bold pricing numbers
+- No stock photo placeholders
 
 ## Core sections
-- Hero with a booking CTA
+- Hero with a free-audit CTA
 - Services
-- DJ vibe / genres / set style
-- Social links
-- Phone and email placement
-- Contact/inquiry form
+- Pricing
+- Contact/audit form
 
-## CTA
-Primary CTA: **Inquire for your event**
+## Primary CTA
+**Book a Free Audit**
 
-## Placeholders to replace
-- Brand name: Nightwave
-- Instagram / TikTok / SoundCloud / YouTube links
-- Phone number
-- Email address
-- Form endpoint
+## Pricing
+- Starter: $249/mo + $299 setup
+- Growth: $449/mo + $299 setup
+- Premium: $749/mo + $299 setup
 
 ## Editing guidance
-Keep the copy short, event-focused, and easy to read on mobile. Preserve the inquiry CTA and keep social links easy to scan.
+Keep copy tight, mobile-first, and conversion-focused. Preserve the Book a Free Audit CTA and keep pricing easy to scan.
