@@ -21,7 +21,7 @@ Reusable website template for DJs who want to attract inquiries for parties, clu
 Primary CTA: **Inquire for your event**
 
 ## Placeholders to replace
-- Brand name: Nightwave
+- Brand name: Your DJ Name
 - Instagram / TikTok / SoundCloud / YouTube links
 - Phone number
 - Email address

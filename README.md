@@ -12,7 +12,7 @@ A dark, premium, motion-rich website template for DJs who book parties, clubs, b
 - Scroll reveal, progress bar, marquee, and subtle DJ-style motion
 
 ## Replace these placeholders
-- `Nightwave` brand name
+- `Your DJ Name` brand name
 - Social URLs and handles
 - Phone number
 - Email address
